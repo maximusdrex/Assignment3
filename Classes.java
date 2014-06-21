@@ -1,4 +1,5 @@
 
+
 import acm.graphics.*;
 import acm.program.*;
 import acm.util.*;
@@ -13,7 +14,6 @@ public int loop = 1;
 		add(rect);
 		while(loop < 0) {
 			rect.move(3, 2);
-			add(rect);
 		}
 		
 	}
