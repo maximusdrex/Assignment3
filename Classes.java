@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Classes {
-public var loop = 1;
+public loop = 1;
 	public void run() {
 		GRect rect = new GRect(100, 100, 100, 100);
 		
