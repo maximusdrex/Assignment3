@@ -59,6 +59,7 @@ public class Breakout extends GraphicsProgram {
 /** Runs the Breakout program. */
 	public void run() {
 		addMouseListeners();
+		makeBricks();
 		
 	}
 	private void makeBricks() {
