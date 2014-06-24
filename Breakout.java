@@ -95,7 +95,7 @@ public class Breakout extends GraphicsProgram {
 			}
 	}
 	public void mouseMoved(MouseEvent e) {
-		mouseX = e.getX();
+		double mouseX = e.getX();
 	}
 
 }
