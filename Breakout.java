@@ -52,7 +52,8 @@ public class Breakout extends GraphicsProgram {
 	private static final int BALL_DIAMETER = BALL_RADIUS * 2;
 /** Offset of the top brick row from the top */
 	private static final int BRICK_Y_OFFSET = 70;
-
+/** Mouse x */
+	public double mouseX;
 /** Number of turns */
 	private static final int NTURNS = 3;
 
@@ -95,7 +96,7 @@ public class Breakout extends GraphicsProgram {
 			}
 	}
 	public void mouseMoved(MouseEvent e) {
-		double mouseX = e.getX();
+		mouseX = e.getX();
 	}
 
 }
