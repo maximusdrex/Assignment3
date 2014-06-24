@@ -30,9 +30,6 @@ public class Breakout extends GraphicsProgram {
 
 /** Offset of the paddle up from the bottom */
 	private static final int PADDLE_Y_OFFSET = 30;
-/** Paddle */
-		GRect paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
 
 /** Number of bricks per row */
 	private static final int NBRICKS_PER_ROW = 10;
@@ -63,6 +60,8 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 		makeBricks();
+		public GRect paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
 		add(paddle);
 		
 	}
