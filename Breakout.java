@@ -58,6 +58,7 @@ public class Breakout extends GraphicsProgram {
 
 /** Runs the Breakout program. */
 	public void run() {
+		addMouseListeners();
 		for(int i = 0; i < NBRICKS_PER_ROW; i++) {
 			
 		}
