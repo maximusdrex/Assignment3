@@ -60,7 +60,7 @@ public class Breakout extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 		for(int i = 0; i < NBRICKS_PER_ROW; i++) {
-			GRect brick = new GRect(BRICK_SEP + (i * (BRICK_WIDTH + BRICK_SEP)), BRICK_SEP, BRICK_WIDTH, BRICK_HEIGHT);
+			GRect brick = new GRect(BRICK_SEP - 1 + (i * (BRICK_WIDTH + BRICK_SEP)), BRICK_SEP, BRICK_WIDTH, BRICK_HEIGHT);
 			add(brick);
 		}
 	}
