@@ -61,6 +61,7 @@ public class Breakout extends GraphicsProgram {
 		addMouseListeners();
 		makeBricks();
 		GRect paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
 		add(paddle);
 		
 	}
