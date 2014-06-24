@@ -59,33 +59,36 @@ public class Breakout extends GraphicsProgram {
 /** Runs the Breakout program. */
 	public void run() {
 		addMouseListeners();
+		
+	}
+	private void makeBricks() {
 		for(int a = 0; a <= NBRICK_ROWS; a++) {
-		for(int i = 0; i < NBRICKS_PER_ROW; i++) {
-			GRect brick = new GRect(BRICK_SEP - 2 + (i * (BRICK_WIDTH + BRICK_SEP)), BRICK_SEP + BRICK_Y_OFFSET + (a * (BRICK_HEIGHT + BRICK_SEP)), BRICK_WIDTH, BRICK_HEIGHT);
-			brick.setFilled(true);
-			if(a < 3) {
-				brick.setFillColor(Color.RED);
-				brick.setColor(Color.RED);
+			for(int i = 0; i < NBRICKS_PER_ROW; i++) {
+				GRect brick = new GRect(BRICK_SEP - 2 + (i * (BRICK_WIDTH + BRICK_SEP)), BRICK_SEP + BRICK_Y_OFFSET + (a * (BRICK_HEIGHT + BRICK_SEP)), BRICK_WIDTH, BRICK_HEIGHT);
+				brick.setFilled(true);
+				if(a < 3) {
+					brick.setFillColor(Color.RED);
+					brick.setColor(Color.RED);
+				}
+				else if(a < 5) {
+					brick.setFillColor(Color.ORANGE);
+					brick.setColor(Color.ORANGE);
+				}
+				else if(a < 7) {
+					brick.setFillColor(Color.YELLOW);
+					brick.setColor(Color.YELLOW);
+				}
+				else if(a < 9) {
+					brick.setFillColor(Color.GREEN);
+					brick.setColor(Color.GREEN);
+				}
+				else if(a < 11) {
+					brick.setFillColor(Color.CYAN);
+					brick.setColor(Color.CYAN);
+				}
+				add(brick);
 			}
-			else if(a < 5) {
-				brick.setFillColor(Color.ORANGE);
-				brick.setColor(Color.ORANGE);
 			}
-			else if(a < 7) {
-				brick.setFillColor(Color.YELLOW);
-				brick.setColor(Color.YELLOW);
-			}
-			else if(a < 9) {
-				brick.setFillColor(Color.GREEN);
-				brick.setColor(Color.GREEN);
-			}
-			else if(a < 11) {
-				brick.setFillColor(Color.CYAN);
-				brick.setColor(Color.CYAN);
-			}
-			add(brick);
-		}
-		}
 	}
 
 }
