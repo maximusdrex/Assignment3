@@ -101,6 +101,7 @@ public class Breakout extends GraphicsProgram {
 		paddle.setFilled(true);
 		add(paddle);
 		paddle.setLocation(mouseX - (PADDLE_WIDTH / 2), HEIGHT - PADDLE_Y_OFFSET);
+		pause(1);
 		update();
 	}
 
