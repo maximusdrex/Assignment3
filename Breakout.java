@@ -66,6 +66,9 @@ public class Breakout extends GraphicsProgram {
 			if(a < 3) {
 				brick.setFillColor(Color.RED);
 			}
+			else if(a < 5) {
+				brick.setFillColor(Color.ORANGE);
+			}
 			add(brick);
 		}
 		}
