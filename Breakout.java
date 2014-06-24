@@ -58,7 +58,9 @@ public class Breakout extends GraphicsProgram {
 
 /** Runs the Breakout program. */
 	public void run() {
-		/* You fill this in, along with any subsidiary methods */
+		for(int i = 0; i < NBRICKS_PER_ROW; i++) {
+			
+		}
 	}
 
 }
