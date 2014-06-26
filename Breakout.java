@@ -64,6 +64,9 @@ public class Breakout extends GraphicsProgram {
 	GOval Ball;
 /** random Generator*/
 	private RandomGenerator rgen;
+/** Ball velocities */
+	private double vx;
+	private double vy;
 
 /** Runs the Breakout program. */
 	public void run() {
