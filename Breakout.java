@@ -154,9 +154,10 @@ public class Breakout extends GraphicsProgram {
 				reflectOffUpAndDown();
 				remove(colliderTopRight);
 				BRICKS_LEFT--;
-				return colliderTopRight;
+				return colliderTopLeft;
 			}
 		}
+		return null;
 	}
 	
 	private void updateBall() {
