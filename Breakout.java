@@ -152,7 +152,8 @@ public class Breakout extends GraphicsProgram {
 			}
 			else {
 				reflectOffUpAndDown();
-				
+				remove(colliderTopRight);
+				BRICKS_LEFT--;
 			}
 		}
 	}
