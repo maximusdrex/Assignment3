@@ -77,6 +77,7 @@ public class Breakout extends GraphicsProgram {
 		paddle.setFilled(true);
 		Ball = new GOval(WIDTH / 2 - BALL_RADIUS, HEIGHT / 2 - BALL_RADIUS, BALL_DIAMETER, BALL_DIAMETER);
 		add(paddle);
+		add(Ball);
 		update();
 		waitForClick();
 		updateBall();
