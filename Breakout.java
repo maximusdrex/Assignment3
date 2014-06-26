@@ -141,8 +141,12 @@ public class Breakout extends GraphicsProgram {
 		vy = -vy;
 	}
 	private GObject ballCollider() {
-		GObject collider = getElementAt(Ball.getX(), Ball.getY());
-		if()
+		GObject colliderTopLeft = getElementAt(Ball.getX(), Ball.getY());
+		GObject colliderTopRight = getElementAt(Ball.getX() + BALL_DIAMETER, Ball.getY());
+		GObject colliderBottomLeft
+		if(collider != null) {
+			return
+		}
 	}
 	
 	private void updateBall() {
