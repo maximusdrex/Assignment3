@@ -144,6 +144,9 @@ public class Breakout extends GraphicsProgram {
 			if(Ball.getX() <= 0) {
 				reflectOffSides();
 			}
+			if(Ball.getX() + BALL_DIAMETER >= WIDTH) {
+				reflectOffSides();
+			}
 			Ball.move(vx, vy);
 			pause(3);
 		}
