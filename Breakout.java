@@ -73,6 +73,8 @@ public class Breakout extends GraphicsProgram {
 		Ball = new GOval(WIDTH / 2 - BALL_RADIUS, HEIGHT / 2 - BALL_RADIUS, BALL_DIAMETER, BALL_DIAMETER);
 		add(paddle);
 		update();
+		waitForClick();
+		updateBall();
 	}
 	
 	private void makeBricks() {
