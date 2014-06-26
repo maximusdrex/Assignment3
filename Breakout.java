@@ -97,7 +97,7 @@ public class Breakout extends GraphicsProgram {
 					brick.setFillColor(Color.YELLOW);
 					brick.setColor(Color.YELLOW);
 				}
-				else if(a < 9) {
+				else if(a < 8) {
 					brick.setFillColor(Color.GREEN);
 					brick.setColor(Color.GREEN);
 				}
