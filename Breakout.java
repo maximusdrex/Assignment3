@@ -59,7 +59,7 @@ public class Breakout extends GraphicsProgram {
 	///This is the paddle.
 	GRect paddle;
 /** This is the ball for the game */
-	GOval
+	GOval Ball;
 
 /** Runs the Breakout program. */
 	public void run() {
