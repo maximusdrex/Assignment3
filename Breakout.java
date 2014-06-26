@@ -140,7 +140,9 @@ public class Breakout extends GraphicsProgram {
 	private void reflectOffUpAndDown() {
 		vy = -vy;
 	}
-	private void
+	private GObject ballCollider() {
+		
+	}
 	
 	private void updateBall() {
 		Ball.move(vx, vy);
