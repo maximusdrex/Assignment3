@@ -70,7 +70,7 @@ public class Breakout extends GraphicsProgram {
 		rgen = RandomGenerator.getInstance();
 		paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
-		ball = new GOval(WIDTH / 2 - BALL_RADIUS, HEIGHT / 2 - BALL_RADIUS, BALL_DIAMETER, BALL_DIAMETER);
+		Ball = new GOval(WIDTH / 2 - BALL_RADIUS, HEIGHT / 2 - BALL_RADIUS, BALL_DIAMETER, BALL_DIAMETER);
 		add(paddle);
 		update();
 	}
