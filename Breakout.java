@@ -171,7 +171,7 @@ public class Breakout extends GraphicsProgram {
 				remove(BallCollider);
 			}
 			
-		}
+	
 		while(BRICKS_LEFT > 0) {
 			if(Ball.getX() <= 0) {
 				reflectOffSides();
