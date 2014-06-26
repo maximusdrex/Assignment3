@@ -147,7 +147,8 @@ public class Breakout extends GraphicsProgram {
 		GObject colliderBottomRight = getElementAt(Ball.getX() + BALL_DIAMETER, Ball.getY() + BALL_DIAMETER);		
 		if(colliderTopLeft != null && colliderTopRight != null) {
 			if(colliderTopLeft == colliderTopRight) {
-				
+				reflectOffUpAndDown();
+				return colliderTopLeft;
 			}
 		}
 	}
