@@ -60,6 +60,8 @@ public class Breakout extends GraphicsProgram {
 	GRect paddle;
 /** This is the ball for the game */
 	GOval Ball;
+/** random Generator*/
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 
 /** Runs the Breakout program. */
 	public void run() {
@@ -67,6 +69,7 @@ public class Breakout extends GraphicsProgram {
 		makeBricks();
 		paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
+		ball = new GOval()
 		add(paddle);
 		update();
 	}
