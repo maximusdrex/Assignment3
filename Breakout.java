@@ -110,7 +110,7 @@ public class Breakout extends GraphicsProgram {
 			}
 	}
 	
-	private void mouseMoved(MouseEvent e) {
+	public void mouseMoved(MouseEvent e) {
 		mouseX = e.getX();
 		update();
 	}
