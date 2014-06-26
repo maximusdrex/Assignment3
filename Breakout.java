@@ -152,7 +152,7 @@ public class Breakout extends GraphicsProgram {
 			}
 			else {
 				reflectOffUpAndDown();
-				f
+				
 			}
 		}
 	}
