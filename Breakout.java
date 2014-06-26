@@ -134,6 +134,9 @@ public class Breakout extends GraphicsProgram {
 			paddle.setLocation(0, HEIGHT - PADDLE_Y_OFFSET);
 		}
 	}
+	private void reflectOffSides() {
+		vx = -vx;
+	}
 	
 	private void updateBall() {
 		Ball.move(vx, vy);
