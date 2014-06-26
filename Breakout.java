@@ -76,6 +76,7 @@ public class Breakout extends GraphicsProgram {
 		paddle = new GRect(WIDTH / 2, HEIGHT - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		Ball = new GOval(WIDTH / 2 - BALL_RADIUS, HEIGHT / 2 - BALL_RADIUS, BALL_DIAMETER, BALL_DIAMETER);
+		Ball.setFilled(true);
 		add(paddle);
 		add(Ball);
 		update();
