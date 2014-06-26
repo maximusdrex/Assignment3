@@ -165,7 +165,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void updateBall() {
-		Ball.move(vx, vy);
+		Ball.move(vx / 2, vy / 2);
 		GObject BallCollider = ballCollider();
 		if(BallCollider != null && BallCollider != null) {
 				remove(BallCollider);
@@ -182,7 +182,7 @@ public class Breakout extends GraphicsProgram {
 			if(Ball.getY() <= 0) {
 				reflectOffUpAndDown();
 			}
-			Ball.move(vx, vy);
+			Ball.move(vx / 2, vy / 2);
 			pause(3);
 		}
 	}
