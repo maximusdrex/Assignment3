@@ -155,6 +155,7 @@ public class Breakout extends GraphicsProgram {
 	
 	private void updateBall() {
 		Ball.move(vx, vy);
+		GObject BallCollider = ballCollider();
 		while(BRICKS_LEFT > 0) {
 			if(Ball.getX() <= 0) {
 				reflectOffSides();
