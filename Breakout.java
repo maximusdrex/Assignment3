@@ -150,7 +150,7 @@ public class Breakout extends GraphicsProgram {
 			return colliderTopLeft;
 		}
 		else if(colliderTopRight != null) {
-			reflectOffUpAndDown()
+			reflectOffUpAndDown();
 			return colliderTopRight;
 		}
 		else if(colliderBottomLeft != null) {
