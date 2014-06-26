@@ -150,6 +150,10 @@ public class Breakout extends GraphicsProgram {
 				reflectOffUpAndDown();
 				return colliderTopLeft;
 			}
+			else {
+				reflectOffUpAndDown();
+				f
+			}
 		}
 	}
 	
