@@ -81,6 +81,7 @@ public class Breakout extends GraphicsProgram {
 		add(Ball);
 		update();
 		waitForClick();
+		vy = 3.0;
 		vx = rgen.nextDouble(1.0, 3.0);
 		if (rgen.nextBoolean(0.5)) {
 			vx = -vx;
@@ -135,7 +136,7 @@ public class Breakout extends GraphicsProgram {
 	}
 	
 	private void updateBall() {
-		
+		Ball.move(vx, vy)
 	}
 
 }
