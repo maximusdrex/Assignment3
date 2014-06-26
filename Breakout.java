@@ -58,6 +58,8 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 	///This is the paddle.
 	GRect paddle;
+/** This is the ball for the game */
+	GOval
 
 /** Runs the Breakout program. */
 	public void run() {
